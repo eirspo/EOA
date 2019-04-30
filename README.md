@@ -1,5 +1,5 @@
-[![Version](http://img.shields.io/badge/Build-unstable-875A7B.svg?style=flat&colorA=8F8F8F)](https://eoa.eirspo.io/)
-[![Build](http://img.shields.io/badge/Version-alpha-875A7B.svg?style=flat&colorA=8F8F8F)](http://www.odoo.com/documentation/master)
+[![Version](http://img.shields.io/badge/Build-unstable-lightgrey.svg?style=flat&colorA=blue&style=flat-square)](https://eoa.eirspo.io/)
+[![Build](http://img.shields.io/badge/Version-alpha-lightgrey.svg?style=flat&colorA=green&style=flat-square)](https://eoa.eirspo.io/)
 
 Eoa
 ----
