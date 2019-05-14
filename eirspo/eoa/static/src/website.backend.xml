@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <div t-name="WidgetWebsiteButton" class="o_stat_info published">
+        <span class="o_stat_text o_value"/>
+        <span class="o_stat_text">On Website</span>
+    </div>
+
+    <t t-name="website.WebsiteDashboardMain">
+        <div class="o_dashboards">
+            <div class="container-fluid o_website_dashboard">
+                <t t-call="website.dashboard_header"/>
+                <t t-call="website.dashboard_content"/>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="website.dashboard_header">
+        <div class="row o_dashboard_common"/>
+    </t>
+
+</templates>

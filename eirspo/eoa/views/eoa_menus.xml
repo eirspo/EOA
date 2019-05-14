@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Top menu item -->
+        <menuitem name="overview"
+            id="eoa_overview"
+            web_icon="account,static/description/icon.png"
+            sequence="40"/>
+
+       <menuitem id="eoa_service" name="Service" parent="eoa_overview" sequence="20"/>
+
+       <menuitem id="eoa_configuration" name="Configuration" parent="eoa_overview" sequence="35"/>
+            <!-- Configuration Sub-Menu -->
+            <menuitem id="gereral_configuration" name="general_config" parent="eoa_configuration" sequence="2"/>
+            <menuitem id="service_configuration" name="service_config" parent="eoa_configuration" sequence="3"/>
+   </data>
+</odoo>
