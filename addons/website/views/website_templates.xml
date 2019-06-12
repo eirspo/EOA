@@ -280,9 +280,15 @@
                         <span>Copyright &amp;copy;</span> <span t-field="res_company.name" itemprop="name">Company name</span>
                         <t t-call="website.language_selector"/>
                     </div>
-                    <div class="col-lg-6 text-right o_not_editable" t-if="not editable">
+                    <div class="col-lg-6 text-right o_not_editable hidden" t-if="not editable">
                         <t t-call="website.brand_promotion"/>
                     </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 text-center text-md-left">
+                        <a href="http://www.beian.miit.gov.cn/" target="_blank">苏ICP备19020654号-1</a>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -290,7 +296,7 @@
 </template>
 
 <template id="brand_promotion" name="Brand Promotion">
-    <div class="o_brand_promotion">
+    <div class="o_brand_promotion" style="display:none">
         Create a <a target="_blank" href="http://www.odoo.com/page/website-builder?utm_source=db&amp;utm_medium=website">free website</a> with
         <a target="_blank" class="badge badge-danger" href="http://www.odoo.com/page/website-builder?utm_source=db&amp;utm_medium=website">Odoo</a>
     </div>
@@ -381,7 +387,7 @@
 </template>
 
 <template id="language_selector">
-    <ul class="js_language_selector mb0 list-inline" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+    <ul class="js_language_selector mb0 list-inline" style="display:none" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
         <li class="list-inline-item">
             <div class="dropup">
                 <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
